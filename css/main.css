@@ -753,7 +753,7 @@ img {
   display: flex;
   justify-content: center;
   align-items: flex-start;
-  background: url(../../img/landing-bg.png) no-repeat scroll center/cover;
+  background: url(../img/landing-bg.png) no-repeat scroll center/cover;
   background-repeat: no-repeat;
   position: relative; }
   @media (max-width: 720px) {
