@@ -1,0 +1,212 @@
+.searchModal{
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999999;
+  width: 100vw;
+  height: 100%;
+  background-color: rgba(black,0.5);
+  @include flex;
+  transition: all 0.5s;
+
+
+  &__content{
+
+    width: 80%;
+    height: auto;
+    transform: translateY(-20%);
+    @include flex;
+    flex-flow: column;
+    position: relative;
+
+
+
+
+
+    @media screen and  (max-width: 40.625em) { //650px
+      width: 95%;
+
+    }
+
+
+
+
+    &__close{
+
+
+      width: auto;
+      height: 3rem;
+      position: absolute;
+      right: 0;
+      top: -3.5rem;
+      @include flex;
+      &__btn{
+
+        width: 2.5rem;
+        height: 2.5px;
+        background-color: white;
+        transform: rotate(45deg);
+
+
+        &:after{
+          content: '';
+          display: block;
+          width: 100%;
+          height: 100%;
+          background-color: white;
+          transform: rotate(90deg);
+        }
+
+      }
+
+
+
+      &:hover &__btn{
+        background-color: $color-pink;
+      }
+
+      &:hover &__btn:after{
+        background-color: $color-pink;
+      }
+
+    }
+
+
+
+    &__box{
+      border-radius: 6px;
+      width: 100%;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      height: 15vh;
+      background-color: white;
+
+      @media (max-width: 950px) {
+        border-radius: 2px;
+
+      }
+
+      @media (max-width: 600px) {
+        height: 10vh;
+        border-radius: 0;
+      }
+      @media (max-width: 450px) {
+        height: 9vh;
+      }
+
+      input[type=submit]{
+        padding: 2rem;
+        width: 20%;
+        height: 100%;
+        background-color: $color-pink;
+        color: #FFFFFF;
+        border-radius: 6px;
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
+        font-size: 3rem;
+
+        &:hover{
+          cursor: pointer;
+        }
+        @media (max-width: 950px) {
+          font-size: 2.5rem;
+          width: 21%;
+          border-radius: 2px;
+
+        }
+        @media (max-width: 600px) {
+          width: 25%;
+          border-radius: 0;
+        }
+        @media (max-width: 450px) {
+          padding: 2rem 1rem;
+          font-size: 2rem;
+
+
+        }
+
+      }
+
+      img{
+
+        filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(74deg) brightness(104%) contrast(102%);
+      }
+
+
+      input{
+        height: 100%;
+        padding: 1rem;
+        font-size:3.5rem;
+        color: $color-gray-900;
+        background-color: transparent;
+      }
+
+
+      input[type=search]{
+       padding: 0 3rem;
+        width: 80%;
+        -webkit-appearance: textfield;
+
+        @media (max-width: 600px) {
+          width: 75%;
+          font-size:3rem;
+
+        }
+        @media (max-width: 450px) {
+          width: 75%;
+          font-size:2.5rem;
+
+        }
+      }
+    }
+
+
+
+
+  }
+
+}
+
+.closeModal{
+
+  height: 0;
+  overflow: hidden;
+  padding: 0;
+}
+
+.subscribeModal{
+  input[type=submit]{
+    @media (max-width: 850px) {
+      font-size:2.5rem;
+    }
+
+    @media (max-width: 700px) {
+      font-size:2rem;
+    }
+
+    @media (max-width: 400px) {
+      width: 30%;
+      font-size:1.8rem;
+    }
+  }
+
+
+  input[type=text]{
+    padding: 0 3rem;
+    width: 80%;
+
+
+    @media (max-width: 600px) {
+      width: 75%;
+      font-size:3rem;
+
+    }
+    @media (max-width: 450px) {
+      width: 75%;
+      font-size:1.8rem;
+
+    }
+  }
+}

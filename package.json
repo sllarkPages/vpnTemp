@@ -1,0 +1,26 @@
+{
+  "name": "018-vpn_empire",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node-sass sass/main.scss css/main.css -w",
+    "compile": "node-sass sass/main.scss css/main.css",
+    "prefix-css": "postcss css/main.css --use autoprefixer --output css/main.css",
+    "compress": "node-sass css/main.css css/main.css --output-style compressed",
+    "build-css": "npm-run-all prefix-css compress-css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sllark/vpn.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sllark/vpn/issues"
+  },
+  "homepage": "https://github.com/sllark/vpn#readme",
+  "dependencies": {
+    "node-sass": "^4.13.0"
+  }
+}
