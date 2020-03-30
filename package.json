@@ -21,6 +21,6 @@
   },
   "homepage": "https://github.com/sllark/vpn#readme",
   "dependencies": {
-    "node-sass": "^4.13.0"
+    "node-sass": "^4.13.1"
   }
 }
