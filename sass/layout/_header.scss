@@ -282,7 +282,8 @@
         .active{
           color: $color-primary;
           img{
-            filter: invert(8%) sepia(8%) saturate(3890%) hue-rotate(310deg) brightness(102%) contrast(97%);
+            //filter: invert(8%) sepia(8%) saturate(3890%) hue-rotate(310deg) brightness(102%) contrast(97%);
+            filter: brightness(0) saturate(100%) invert(62%) sepia(79%) saturate(439%) hue-rotate(105deg) brightness(93%) contrast(100%);
 
           }
         }

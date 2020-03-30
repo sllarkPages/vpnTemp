@@ -109,7 +109,7 @@ button:active {
   transform: translateY(3px); }
 
 main {
-  padding: 5.5rem 0 8rem;
+  padding: 5.5rem 0 0;
   width: 100%;
   max-width: 100%;
   height: auto;
@@ -117,8 +117,8 @@ main {
   justify-content: center;
   align-items: center;
   flex-flow: column;
-  overflow: hidden;
-  background-color: #fff; }
+  background-color: #fff;
+  z-index: 44; }
   @media (max-width: 800px) {
     main {
       padding: 5rem 0; } }
@@ -189,12 +189,12 @@ main {
             height: 3rem;
             width: 100%; }
             .sectionWunder__dropdownButton__cont__list li a:hover {
-              background: linear-gradient(48deg, #f9c769 0%, #f2a03d 100%); }
+              background: linear-gradient(48deg, #12dc91 0%, #00b472 100%); }
             .sectionWunder__dropdownButton__cont__list li a:active {
-              background: linear-gradient(48deg, #f9c769 0%, #f2a03d 100%);
+              background: linear-gradient(48deg, #12dc91 0%, #00b472 100%);
               color: #fff; }
         .sectionWunder__dropdownButton__cont__list .active a {
-          background: linear-gradient(48deg, #f9c769 0%, #f2a03d 100%);
+          background: linear-gradient(48deg, #12dc91 0%, #00b472 100%);
           color: white !important; }
       .sectionWunder__dropdownButton__cont .hide {
         display: none; }
@@ -216,7 +216,7 @@ main {
       width: 48.5%;
       border-radius: 20px;
       box-shadow: 0 8px 28px rgba(57, 34, 6, 0.1);
-      background: linear-gradient(48deg, #f9c769 0%, #f2a03d 100%);
+      background: linear-gradient(48deg, #12dc91 0%, #00b472 100%);
       display: flex;
       flex-flow: column;
       justify-content: center;
@@ -302,10 +302,11 @@ main {
       background: linear-gradient(45deg, #64d4b8 0%, #0092e5 100%); }
 
 .sectionReviews {
+  z-index: 45;
   color: black;
   width: 100%;
   height: auto;
-  padding: 5rem 0 8rem;
+  padding: 5rem 0 10rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -419,7 +420,7 @@ main {
         font-size: 14px;
         font-family: "Montserrat",inherit,sans-serif;
         font-weight: 700;
-        background: linear-gradient(48deg, #f9c769 0%, #f2a03d 100%) !important;
+        background: linear-gradient(48deg, #12dc91 0%, #00b472 100%) !important;
         color: #fff;
         height: 7.5rem;
         width: 25%;
@@ -946,7 +947,7 @@ img {
                 border-top-left-radius: 4px;
                 border-top-right-radius: 4px; }
               .header__top__all__middle li ul li:hover a {
-                color: #F9C769; }
+                color: #12dc91; }
           .header__top__all__middle li:hover {
             cursor: pointer; }
           .header__top__all__middle li .hide {
@@ -954,9 +955,9 @@ img {
             overflow: hidden;
             display: none; }
         .header__top__all__middle .active {
-          color: #F9C769; }
+          color: #12dc91; }
           .header__top__all__middle .active img {
-            filter: invert(8%) sepia(8%) saturate(3890%) hue-rotate(310deg) brightness(102%) contrast(97%); }
+            filter: brightness(0) saturate(100%) invert(62%) sepia(79%) saturate(439%) hue-rotate(105deg) brightness(93%) contrast(100%); }
       .header__top__all__rightIcons {
         display: flex;
         justify-content: flex-end;
@@ -1022,7 +1023,7 @@ img {
               .header__top__all__rightIcons .langDropdown ul li:hover {
                 cursor: pointer; }
             .header__top__all__rightIcons .langDropdown ul .active {
-              background-color: #F9C769; }
+              background-color: #12dc91; }
               .header__top__all__rightIcons .langDropdown ul .active a {
                 color: white; }
           .header__top__all__rightIcons .langDropdown .hide {
@@ -1195,10 +1196,10 @@ img {
               border-bottom: 1px solid rgba(0, 0, 0, 0.05); }
             .header__Content__btns__btnContainer .dropdownOption li:hover {
               color: white;
-              background-color: #F9C769;
+              background-color: #12dc91;
               cursor: pointer; }
             .header__Content__btns__btnContainer .dropdownOption li:active {
-              background-color: #F9C769; }
+              background-color: #12dc91; }
           .header__Content__btns__btnContainer .dropdownOption:before {
             content: '';
             display: block;
@@ -1210,7 +1211,7 @@ img {
             right: 0;
             clip-path: polygon(50% 0, 100% 100%, 0 100%); }
           .header__Content__btns__btnContainer .dropdownOption .active {
-            background-color: #F9C769;
+            background-color: #12dc91;
             color: white; }
           li:hover .header__Content__btns__btnContainer .dropdownOption:before {
             background-color: #ff3e20; }
@@ -1801,7 +1802,7 @@ img {
       margin: 0 auto;
       height: 65%;
       min-height: 7rem;
-      background: linear-gradient(48deg, #f9c769 0%, #f2a03d 100%) !important;
+      background: linear-gradient(48deg, #12dc91 0%, #00b472 100%) !important;
       color: #392206;
       text-transform: uppercase;
       font-size: 14px;
@@ -2150,7 +2151,7 @@ img {
         width: 100%;
         margin: 1rem 0; } }
     .guruBox__btn button {
-      background: linear-gradient(48deg, #f9c769 0%, #f2a03d 100%) !important;
+      background: linear-gradient(48deg, #12dc91 0%, #00b472 100%) !important;
       height: 7.3rem;
       width: 100%;
       max-width: 23.8rem;
@@ -2174,7 +2175,7 @@ img {
           max-width: 82%;
           height: 5.5rem; } }
       .guruBox__btn button:hover {
-        background-color: #f9c769; }
+        background-color: #12dc91; }
     .guruBox__btn div {
       display: flex;
       justify-content: center;
@@ -2238,8 +2239,8 @@ img {
       width: 5.5rem;
       height: 4rem;
       border-radius: 22px;
-      border: 1px solid #F9C769;
-      color: #F9C769;
+      border: 1px solid #12dc91;
+      color: #12dc91;
       font-size: 1.5rem; }
       .casinoBox__rating__box span {
         font-weight: bold;
@@ -2310,7 +2311,7 @@ img {
         width: 100%;
         margin: 1rem 0; } }
     .casinoBox__btn a {
-      background: linear-gradient(48deg, #f9c769 0%, #f2a03d 100%) !important;
+      background: linear-gradient(48deg, #12dc91 0%, #00b472 100%) !important;
       height: 5.7rem;
       width: 100%;
       max-width: 32.7rem;
@@ -2326,7 +2327,7 @@ img {
         .casinoBox__btn a {
           max-width: 100%; } }
       .casinoBox__btn a:hover {
-        background-color: #F9C769; }
+        background-color: #12dc91; }
 
 .textList {
   width: 100%;
@@ -2554,7 +2555,7 @@ img {
       margin: 0 auto;
       height: 65%;
       min-height: 7rem;
-      background: linear-gradient(48deg, #f9c769 0%, #f2a03d 100%) !important;
+      background: linear-gradient(48deg, #12dc91 0%, #00b472 100%) !important;
       color: #fff;
       text-transform: uppercase;
       font-size: 14px;

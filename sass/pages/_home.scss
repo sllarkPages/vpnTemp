@@ -1,5 +1,5 @@
 main{
-  padding: 5.5rem 0 8rem;
+  padding: 5.5rem 0 0;
   width: 100%;
   max-width: 100%;
   height: auto;
@@ -7,9 +7,9 @@ main{
   justify-content: center;
   align-items: center;
   flex-flow: column;
-  overflow: hidden;
+  //overflow: hidden;
   background-color: #fff;
-
+  z-index: 44;
   @media (max-width: 800px) {
     padding: 5rem 0;
   }
@@ -102,11 +102,11 @@ main{
 
 
             &:hover{
-              background: linear-gradient(48deg,rgba(249,199,105,1) 0%,rgba(242,160,61,1) 100%);
+              background: linear-gradient(48deg,$color-primary 0%,$color-primary-dark 100%);
             }
 
             &:active{
-              background: linear-gradient(48deg,rgba(249,199,105,1) 0%,rgba(242,160,61,1) 100%);
+              background: linear-gradient(48deg,$color-primary 0%,$color-primary-dark 100%);
               color: #fff;
             }
 
@@ -115,7 +115,7 @@ main{
 
         .active{
           a{
-            background: linear-gradient(48deg,rgba(249,199,105,1) 0%,rgba(242,160,61,1) 100%);
+            background: linear-gradient(48deg,$color-primary 0%,$color-primary-dark 100%);
             color: white !important;
           }
         }
@@ -151,7 +151,7 @@ main{
       width: 48.5%;
       border-radius: 20px;
       box-shadow: 0 8px 28px rgba(57,34,6,.1);
-      background: linear-gradient(48deg,rgba(249,199,105,1) 0%,rgba(242,160,61,1) 100%);
+      background: linear-gradient(48deg,$color-primary 0%,$color-primary-dark 100%);
       //background: linear-gradient(145deg,$color-pink,$color-blue) ;
 
       display: flex;
@@ -281,10 +281,11 @@ main{
 
 .sectionReviews{
 
+  z-index: 45;
   color: black;
   width: 100%;
   height: auto;
-  padding: 5rem 0 8rem;
+  padding: 5rem 0 10rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -442,7 +443,7 @@ main{
         font-size: 14px;
         font-family: "Montserrat",inherit,sans-serif;
         font-weight: 700;
-        background: linear-gradient(48deg,rgba(249,199,105,1) 0%,rgba(242,160,61,1) 100%)!important;
+        background: linear-gradient(48deg,$color-primary 0%,$color-primary-dark 100%)!important;
         //background: linear-gradient(145deg,$color-pink,$color-blue) ;
 
         color: #fff;
