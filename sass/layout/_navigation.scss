@@ -43,10 +43,10 @@
     &:hover{
 
       &:before{
-        background-color: #F9C769;
+        background-color: $color-primary;
       }
       &:after{
-        background-color: #F9C769;
+        background-color: $color-primary;
       }
     }
   }
@@ -102,7 +102,7 @@
 
           &:hover{
             cursor: pointer;
-            color: #F9C769;
+            color: $color-primary;
           }
         }
 

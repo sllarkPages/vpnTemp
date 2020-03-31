@@ -1,5 +1,5 @@
-@import "abstracts/mixins";
 @import "abstracts/variables";
+@import "abstracts/mixins";
 
 @import "base/base";
 @import "base/animation";
@@ -20,7 +20,6 @@
 @import "components/guruBox";
 @import "components/casinoBox";
 @import "components/textList";
-
 @import "components/smReview";
 
-
+@import "components/btn";

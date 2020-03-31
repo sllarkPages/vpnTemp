@@ -63,11 +63,11 @@
 
 
       &:hover &__btn{
-        background-color: $color-pink;
+        background-color: $color-primary;
       }
 
       &:hover &__btn:after{
-        background-color: $color-pink;
+        background-color: $color-primary;
       }
 
     }
@@ -100,7 +100,7 @@
         padding: 2rem;
         width: 20%;
         height: 100%;
-        background-color: $color-pink;
+        background-color: $color-primary;
         color: #FFFFFF;
         border-radius: 6px;
         border-top-left-radius: 0;

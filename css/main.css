@@ -534,28 +534,6 @@ img {
     align-items: center;
     width: 100%;
     height: auto; }
-    .sectionVPNReview__button a {
-      background: linear-gradient(48deg, #f9c769 0%, #f2a03d 100%);
-      color: #392206;
-      text-transform: uppercase;
-      font-family: "Montserrat",inherit,sans-serif;
-      font-weight: 700;
-      font-size: 1.6rem;
-      border-radius: 4px;
-      width: 100%;
-      height: 8rem;
-      max-width: 27rem;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      letter-spacing: 1.4px;
-      transition: all 0.5s ease;
-      cursor: pointer; }
-      .sectionVPNReview__button a:hover {
-        box-shadow: 0 4px 16px 0 rgba(169, 169, 169, 0.87);
-        color: #392206; }
-      .sectionVPNReview__button a:active {
-        transform: translateY(0.3rem); }
 
 .sectionProducts {
   padding: 8rem 0 5rem;
@@ -744,9 +722,14 @@ img {
         @media (max-width: 500px) {
           .sectionGuide__allBoxes__box h2 {
             font-size: 1.6rem; } }
-      .sectionGuide__allBoxes__box__button a {
-        height: 6.5rem;
-        max-width: 18rem; }
+      .sectionGuide__allBoxes__box__button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: auto; }
+        .sectionGuide__allBoxes__box__button a {
+          height: 6.5rem; }
 
 .header {
   width: 100%;
@@ -755,7 +738,6 @@ img {
   justify-content: center;
   align-items: flex-start;
   background: url(../img/landing-bg.png) no-repeat scroll center/cover;
-  background-repeat: no-repeat;
   position: relative; }
   @media (max-width: 720px) {
     .header {
@@ -800,8 +782,6 @@ img {
     left: 0;
     top: 0;
     transition: all 1s ease; }
-    .header__top .searchIcon:hover, .header__top .giftIcon:hover {
-      cursor: pointer; }
     @media (max-width: 720px) {
       .header__top {
         width: 100%;
@@ -809,6 +789,8 @@ img {
     @media (max-width: 450px) {
       .header__top {
         flex-flow: column; } }
+    .header__top .searchIcon:hover, .header__top .giftIcon:hover {
+      cursor: pointer; }
     .header__top__all {
       display: flex;
       justify-content: space-between;
@@ -890,7 +872,6 @@ img {
         justify-content: space-around;
         align-items: center;
         min-width: 45%;
-        transform: translateX(-7.3rem);
         width: auto;
         height: auto;
         z-index: 1; }
@@ -924,11 +905,11 @@ img {
             .header__top__all__middle li ul li {
               width: 100%;
               height: 4.4rem;
-              padding: 0.7rem 1rem;
               font-weight: 400;
               background-color: white;
               pointer-events: all;
-              line-height: 1.5; }
+              line-height: 1.6;
+              text-align: left; }
               .header__top__all__middle li ul li a {
                 color: #818181;
                 width: 100%;
@@ -937,7 +918,8 @@ img {
                 justify-content: flex-start;
                 align-items: center;
                 font-weight: 700;
-                padding-left: 1rem; }
+                padding: 0.7rem 1rem 0.7rem 1.5rem;
+                z-index: 22; }
               .header__top__all__middle li ul li:not(:last-child) {
                 border-bottom: 1px solid rgba(0, 0, 0, 0.15); }
               .header__top__all__middle li ul li:last-child {
@@ -1180,18 +1162,21 @@ img {
           border-top-right-radius: 0;
           box-shadow: 0 7px 11px rgba(0, 0, 0, 0.16); }
           .header__Content__btns__btnContainer .dropdownOption li {
-            padding: 0.7rem 0;
             width: 100%;
             height: 100%;
             color: black;
-            font-weight: 400; }
+            font-weight: 400;
+            text-align: left; }
+            .header__Content__btns__btnContainer .dropdownOption li:first-letter {
+              text-transform: uppercase; }
             .header__Content__btns__btnContainer .dropdownOption li a {
-              padding: 0.9rem 0;
+              padding: 2rem 1.5rem;
               width: 100%;
               height: 100%;
               display: block;
               font-size: 1.5rem;
-              font-weight: 500; }
+              font-weight: 500;
+              z-index: 22; }
             .header__Content__btns__btnContainer .dropdownOption li:not(:last-child) {
               border-bottom: 1px solid rgba(0, 0, 0, 0.05); }
             .header__Content__btns__btnContainer .dropdownOption li:hover {
@@ -1378,9 +1363,9 @@ img {
       background-color: black;
       transform: rotate(-45deg) translate(-2px, -1.5px); }
     .nav__close:hover:before {
-      background-color: #F9C769; }
+      background-color: #12dc91; }
     .nav__close:hover:after {
-      background-color: #F9C769; }
+      background-color: #12dc91; }
   .nav__container {
     margin-top: 5rem;
     width: 100%;
@@ -1421,7 +1406,7 @@ img {
           display: block; }
           .nav__container ul li a:hover {
             cursor: pointer;
-            color: #F9C769; }
+            color: #12dc91; }
         .nav__container ul li:not(:last-child) {
           border-bottom: 1px solid rgba(0, 0, 0, 0.15); }
     .nav__container span {
@@ -1803,7 +1788,7 @@ img {
       height: 65%;
       min-height: 7rem;
       background: linear-gradient(48deg, #12dc91 0%, #00b472 100%) !important;
-      color: #392206;
+      color: #fff;
       text-transform: uppercase;
       font-size: 14px;
       font-weight: 700;
@@ -1890,9 +1875,9 @@ img {
           background-color: white;
           transform: rotate(90deg); }
       .searchModal__content__close:hover .searchModal__content__close__btn {
-        background-color: #F9C769; }
+        background-color: #12dc91; }
       .searchModal__content__close:hover .searchModal__content__close__btn:after {
-        background-color: #F9C769; }
+        background-color: #12dc91; }
     .searchModal__content__box {
       border-radius: 6px;
       width: 100%;
@@ -1915,7 +1900,7 @@ img {
         padding: 2rem;
         width: 20%;
         height: 100%;
-        background-color: #F9C769;
+        background-color: #12dc91;
         color: #FFFFFF;
         border-radius: 6px;
         border-top-left-radius: 0;
@@ -2006,8 +1991,6 @@ img {
   @media (max-width: 500px) {
     .guruBox {
       padding: 2.5rem 0 0.5rem; } }
-  .guruBox a {
-    text-decoration: rgba(26, 26, 26, 0.65) underline; }
   .guruBox span {
     display: block;
     background-color: rgba(0, 0, 0, 0.1);
@@ -2027,7 +2010,6 @@ img {
         display: none; } }
   .guruBox__leftLogoText {
     height: 100%;
-    text-align: center;
     display: flex; }
     @media (max-width: 1100px) {
       .guruBox__leftLogoText {
@@ -2042,29 +2024,31 @@ img {
       height: 7.5rem;
       border-radius: 8px;
       box-shadow: 0 8px 10px rgba(0, 0, 0, 0.11); }
-    .guruBox__leftLogoText h2 {
-      margin-top: 0;
-      font-size: 1.4rem;
-      color: #1A1A1A;
-      opacity: 0.65;
-      font-weight: bold; }
     .guruBox__leftLogoText__text {
       text-align: left;
       padding-left: 1rem;
       display: flex;
-      flex-flow: column; }
-      .guruBox__leftLogoText__text__review {
-        margin-top: 1rem; }
-        .guruBox__leftLogoText__text__review__ratingStars img {
-          width: 2rem;
-          height: 2rem;
-          box-shadow: none; }
-        .guruBox__leftLogoText__text__review__reviewName {
-          margin-top: 1rem;
-          display: block;
-          font-size: 1.1rem;
-          color: #040438;
-          opacity: 0.65; }
+      flex-flow: column;
+      justify-content: center; }
+      .guruBox__leftLogoText__text h2 {
+        margin-top: 0;
+        font-size: 15px;
+        color: #392206;
+        font-weight: 700;
+        line-height: 1.2; }
+      .guruBox__leftLogoText__text__review__ratingStars img {
+        width: 2rem;
+        height: 2rem;
+        box-shadow: none; }
+      .guruBox__leftLogoText__text__review__reviewName {
+        display: block;
+        font-weight: 500;
+        opacity: .6;
+        text-transform: uppercase;
+        line-height: 1.5;
+        font-size: 1.2rem;
+        color: #007bff;
+        text-decoration: none; }
   .guruBox__name {
     color: #1A1A1A;
     opacity: 0.65;
@@ -2204,64 +2188,64 @@ img {
       flex-flow: row wrap;
       height: auto;
       padding: 3.5rem 3rem; } }
-  .casinoBox__leftLogo {
+  @media (max-width: 900px) {
+    .casinoBox {
+      justify-content: space-between; } }
+  .casinoBox__leftLogoRating {
     height: 100%;
-    width: 15%;
-    text-align: center; }
-    @media (max-width: 1050px) {
-      .casinoBox__leftLogo {
-        width: 12%;
-        max-height: 10rem; } }
-    @media (max-width: 900px) {
-      .casinoBox__leftLogo {
-        width: 35%;
-        text-align: left; } }
-    @media (max-width: 550px) {
-      .casinoBox__leftLogo {
-        width: 50%; } }
-    .casinoBox__leftLogo img {
-      height: 100%;
-      border-radius: 8px;
-      box-shadow: 0 8px 10px rgba(0, 0, 0, 0.11);
-      max-width: 15rem; }
-      @media (max-width: 1050px) {
-        .casinoBox__leftLogo img {
-          max-height: 10rem; } }
-  .casinoBox__rating {
-    width: 15%;
+    width: 25%;
+    text-align: center;
     display: flex;
-    justify-content: center;
-    font-size: 1.4rem; }
-    .casinoBox__rating__box {
+    justify-content: space-around;
+    align-items: center; }
+    .casinoBox__leftLogoRating img {
+      height: 100%;
+      box-shadow: 0 8px 10px rgba(0, 0, 0, 0.11);
+      max-width: 15rem;
+      max-height: 8rem; }
+      @media (max-width: 1050px) {
+        .casinoBox__leftLogoRating img {
+          max-height: 10rem; } }
+    @media (max-width: 1050px) {
+      .casinoBox__leftLogoRating {
+        max-height: 10rem;
+        width: 25%; } }
+    @media (max-width: 900px) {
+      .casinoBox__leftLogoRating {
+        width: 35%; } }
+    @media (max-width: 550px) {
+      .casinoBox__leftLogoRating {
+        width: 100%;
+        justify-content: flex-start; } }
+    .casinoBox__leftLogoRating__rating {
+      width: auto;
       display: flex;
       justify-content: center;
-      align-items: center;
-      width: 5.5rem;
-      height: 4rem;
-      border-radius: 22px;
-      border: 1px solid #12dc91;
-      color: #12dc91;
-      font-size: 1.5rem; }
-      .casinoBox__rating__box span {
-        font-weight: bold;
-        font-size: 2rem; }
-      .casinoBox__rating__box sub {
-        vertical-align: sub;
-        font-size: smaller; }
-    @media (max-width: 1050px) {
-      .casinoBox__rating {
-        width: 17%; } }
-    @media (max-width: 550px) {
-      .casinoBox__rating {
-        width: 50%; } }
-    @media (max-width: 400px) {
-      .casinoBox__rating {
-        font-size: 1.2rem; } }
+      font-size: 1.4rem; }
+      .casinoBox__leftLogoRating__rating__box {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 5.5rem;
+        height: 4rem;
+        border-radius: 22px;
+        border: 1px solid #12dc91;
+        color: #12dc91;
+        font-size: 1.5rem; }
+        .casinoBox__leftLogoRating__rating__box span {
+          font-weight: bold;
+          font-size: 2rem; }
+        .casinoBox__leftLogoRating__rating__box sub {
+          vertical-align: sub;
+          font-size: smaller; }
+      @media (max-width: 550px) {
+        .casinoBox__leftLogoRating__rating {
+          font-size: 1.2rem;
+          transform: translateX(4rem); } }
   .casinoBox__bonus {
     text-align: center;
     display: flex;
     flex-flow: column;
-    justify-content: center;
     align-items: center;
     width: 25%; }
     @media (max-width: 1050px) {
@@ -2269,7 +2253,7 @@ img {
         width: 30%; } }
     @media (max-width: 900px) {
       .casinoBox__bonus {
-        width: 35%; } }
+        width: 50%; } }
     @media (max-width: 550px) {
       .casinoBox__bonus {
         margin: 1rem 0 0;
@@ -2298,7 +2282,7 @@ img {
         margin: 1rem 0 0;
         width: 100%; } }
   .casinoBox__btn {
-    width: 20%;
+    width: 25%;
     text-align: center; }
     @media (max-width: 1050px) {
       .casinoBox__btn {
@@ -2306,7 +2290,7 @@ img {
         margin: 2rem 0 1rem;
         display: flex;
         justify-content: center; } }
-    @media (max-width: 500px) {
+    @media (max-width: 900px) {
       .casinoBox__btn {
         width: 100%;
         margin: 1rem 0; } }
@@ -2574,3 +2558,26 @@ img {
       color: rgba(33, 32, 72, 0.6);
       text-transform: uppercase;
       margin-top: 10px; }
+
+.btn--primary {
+  background: linear-gradient(48deg, #12dc91 0%, #00b472 100%) !important;
+  color: #fff;
+  text-transform: uppercase;
+  font-family: "Montserrat",inherit,sans-serif;
+  font-weight: 700;
+  font-size: 1.6rem;
+  border-radius: 4px;
+  width: 100%;
+  height: 8rem;
+  max-width: 27rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  letter-spacing: 1.4px;
+  transition: all 0.5s ease;
+  cursor: pointer; }
+  .btn--primary:hover {
+    box-shadow: 0 4px 16px 0 rgba(169, 169, 169, 0.87);
+    color: #131313; }
+  .btn--primary:active {
+    transform: translateY(0.3rem); }

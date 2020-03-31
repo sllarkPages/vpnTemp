@@ -85,9 +85,14 @@
 
       &__button{
 
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: auto;
+
         a{
           height: 6.5rem;
-          max-width: 18rem;
         }
       }
 
