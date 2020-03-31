@@ -1,10 +1,52 @@
 .detailMain{
-  padding-top: 11rem;
+  margin-top: 37rem;
   padding-bottom: 0;
+
+  @media (max-width: 970px) {
+    margin-top: 0;
+    padding-top: 1.5rem;
+  }
 }
+
+.topBoxes{
+
+  position: fixed;
+  top: -2rem;
+  left: 0;
+  background-color: white;
+  width: 100%;
+  padding-top: 1rem;
+  margin-top: 11rem;
+  //border: 1px solid red;
+  display: flex;
+  justify-content: center;
+  z-index: 100;
+
+  @media (max-width: 970px) {
+    position: relative;
+    top: unset;
+    left: unset;
+  }
+    .container{
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+  }
+
+  //E8E8E8
+
+
+}
+
+
+
 .sectionVPNReview{
   color: black;
   padding: 0 0 7rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
   .container{
     justify-content: center;
