@@ -535,6 +535,8 @@ img {
     margin-bottom: 2.5rem; }
   .sectionVPNReview .featuerBox {
     align-self: center; }
+  .sectionVPNReview .simpleBox {
+    border-top: 1px solid rgba(0, 0, 0, 0.2) !important; }
   .sectionVPNReview__text {
     text-align: left;
     margin: 4rem 0; }
@@ -698,6 +700,9 @@ img {
             .sectionProducts__allProducts__product .featuerBox__button a {
               max-width: 100%;
               margin-top: 2rem; } }
+
+.guideMain {
+  margin-top: 3rem; }
 
 .sectionGuide {
   width: 100%;
@@ -941,7 +946,7 @@ img {
             font-weight: 400;
             font-size: 1.2rem;
             width: 150%;
-            min-width: 20rem;
+            min-width: 21rem;
             z-index: 1;
             border: 1px solid rgba(0, 0, 0, 0.15);
             overflow: hidden; }
@@ -1158,7 +1163,7 @@ img {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding: 0 10%;
+        padding: 0 6%;
         border-radius: 6px;
         position: relative; }
         .header__Content__btns__btnContainer:hover {
