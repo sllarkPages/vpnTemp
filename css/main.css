@@ -151,7 +151,7 @@ main {
     width: 100%; }
     .sectionWunder__dropdownButton__cont {
       width: 28rem;
-      padding: 2.5rem 3rem;
+      padding: 2.5rem 2rem;
       border: 1px solid #DFDFDF;
       border-radius: 6px;
       display: flex;
@@ -267,7 +267,7 @@ main {
               width: 100%;
               margin-top: 2rem; } }
           .sectionWunder__vpnBoxButtons__box__content__btns a {
-            width: 90%;
+            width: 95%;
             height: 45%;
             display: flex;
             justify-content: space-around;
@@ -277,9 +277,10 @@ main {
             border-radius: 3px;
             box-shadow: 0 32px 32px rgba(57, 34, 6, 0.17);
             cursor: pointer;
-            font-size: 1.6rem;
+            font-size: 1.5rem;
             color: #392206;
             font-weight: 700;
+            text-transform: uppercase;
             transition: all 0.3s ease-in;
             z-index: 3; }
             .sectionWunder__vpnBoxButtons__box__content__btns a:hover {
@@ -287,6 +288,8 @@ main {
               transform: translateX(0.4rem); }
             .sectionWunder__vpnBoxButtons__box__content__btns a:active {
               transform: translateX(0.4rem) translateY(3px); }
+            .sectionWunder__vpnBoxButtons__box__content__btns a img {
+              width: 2.5rem; }
         .sectionWunder__vpnBoxButtons__box__content__img {
           width: 46%;
           display: flex;
@@ -462,36 +465,26 @@ img {
     line-height: 1.2; }
   .container > p {
     max-width: 700px;
-    margin-bottom: 5rem;
+    margin-bottom: 3rem;
     margin-top: 2rem;
     font-size: 1.6rem;
     color: rgba(0, 0, 0, 0.63);
     line-height: 1.4; }
 
 .detailMain {
-  margin-top: 37rem;
-  padding-bottom: 0; }
+  padding: 3rem 0; }
   @media (max-width: 970px) {
     .detailMain {
       margin-top: 0;
       padding-top: 1.5rem; } }
 
 .topBoxes {
-  position: fixed;
-  top: -2rem;
-  left: 0;
   background-color: white;
   width: 100%;
-  padding-top: 1rem;
-  margin-top: 11rem;
   display: flex;
   justify-content: center;
-  z-index: 100; }
-  @media (max-width: 970px) {
-    .topBoxes {
-      position: relative;
-      top: unset;
-      left: unset; } }
+  z-index: 100;
+  margin-top: 11rem; }
   .topBoxes .container {
     flex-flow: row wrap;
     justify-content: center;
@@ -581,128 +574,17 @@ img {
   display: flex;
   justify-content: center;
   align-items: center; }
-  .sectionProducts__allProducts {
-    width: 100%;
-    display: flex;
-    flex-flow: column;
-    justify-content: center;
-    align-items: center; }
-    .sectionProducts__allProducts__product {
-      color: black; }
-      .sectionProducts__allProducts__product__num {
-        width: 8%;
-        text-align: left;
-        padding-left: 2rem; }
-        .sectionProducts__allProducts__product__num h5 {
-          font-size: 1.5rem;
-          font-weight: 600 !important; }
-        @media (max-width: 800px) {
-          .sectionProducts__allProducts__product__num {
-            display: none; } }
-      .sectionProducts__allProducts__product .featuerBox__first {
-        width: 33.6%;
-        min-height: 40px;
-        border: none; }
-        @media (max-width: 1050px) {
-          .sectionProducts__allProducts__product .featuerBox__first {
-            width: 33.6%; } }
-        @media (max-width: 880px) {
-          .sectionProducts__allProducts__product .featuerBox__first {
-            width: 33.6%; } }
-        @media (max-width: 767px) {
-          .sectionProducts__allProducts__product .featuerBox__first {
-            width: 45%;
-            max-height: 9.5rem; } }
-        @media (max-width: 520px) {
-          .sectionProducts__allProducts__product .featuerBox__first {
-            max-height: 6.5rem;
-            width: 45%;
-            justify-content: center;
-            height: auto; } }
-        @media (max-width: 450px) {
-          .sectionProducts__allProducts__product .featuerBox__first {
-            width: 53%; } }
-        @media (max-width: 300px) {
-          .sectionProducts__allProducts__product .featuerBox__first {
-            width: 57%; }
-            .sectionProducts__allProducts__product .featuerBox__first__text {
-              margin-left: 0.4rem; } }
-      .sectionProducts__allProducts__product .featuerBox__sec {
-        width: 30.6%;
-        min-height: 40px;
-        border-left: 1px solid #e3e3e3; }
-        @media (max-width: 1050px) {
-          .sectionProducts__allProducts__product .featuerBox__sec {
-            width: 30.6%; } }
-        @media (max-width: 880px) {
-          .sectionProducts__allProducts__product .featuerBox__sec {
-            width: 30.6%; } }
-        @media (max-width: 767px) {
-          .sectionProducts__allProducts__product .featuerBox__sec {
-            width: 45%;
-            max-height: 9.5rem;
-            justify-content: center; } }
-        @media (max-width: 520px) {
-          .sectionProducts__allProducts__product .featuerBox__sec {
-            max-height: 6.5rem;
-            width: 47%;
-            justify-content: center;
-            height: auto; } }
-        @media (max-width: 450px) {
-          .sectionProducts__allProducts__product .featuerBox__sec {
-            width: 47%; } }
-        @media (max-width: 300px) {
-          .sectionProducts__allProducts__product .featuerBox__sec {
-            width: 43%; } }
-        .sectionProducts__allProducts__product .featuerBox__sec__rating {
-          flex-flow: row; }
-          .sectionProducts__allProducts__product .featuerBox__sec__rating__box {
-            order: 2;
-            margin-left: 1.5rem; }
-          .sectionProducts__allProducts__product .featuerBox__sec__rating__stars {
-            order: 1; }
-      .sectionProducts__allProducts__product .featuerBox__button {
-        width: 27.6%;
-        height: 33%;
-        min-height: 40px;
-        display: flex;
-        justify-content: flex-end;
-        align-items: center; }
-        @media (max-width: 1050px) {
-          .sectionProducts__allProducts__product .featuerBox__button {
-            max-height: inherit;
-            margin: 0;
-            width: 27.6%; } }
-        @media (max-width: 880px) {
-          .sectionProducts__allProducts__product .featuerBox__button {
-            transform: translateX(0);
-            width: 27.6%; } }
-        @media (max-width: 767px) {
-          .sectionProducts__allProducts__product .featuerBox__button {
-            width: 100%;
-            transform: translateX(0);
-            margin: 2.5rem 0 2rem;
-            justify-content: center; } }
-        @media (max-width: 520px) {
-          .sectionProducts__allProducts__product .featuerBox__button {
-            margin: 1.5rem 0 0; } }
-        .sectionProducts__allProducts__product .featuerBox__button a {
-          max-width: 14rem;
-          min-height: 6rem;
-          margin: 0;
-          margin-right: 2rem; }
-          @media (max-width: 767px) {
-            .sectionProducts__allProducts__product .featuerBox__button a {
-              max-width: 100%;
-              min-height: 8rem;
-              margin: 0; } }
-          @media (max-width: 520px) {
-            .sectionProducts__allProducts__product .featuerBox__button a {
-              max-width: 100%;
-              margin-top: 2rem; } }
+  .sectionProducts .topBoxes {
+    margin-top: 0;
+    background-color: transparent; }
+    .sectionProducts .topBoxes .reviewSmallBox {
+      background-color: white; }
 
 .guideMain {
-  margin-top: 3rem; }
+  margin-top: 6rem; }
+  .guideMain .locationContainer {
+    align-items: flex-start;
+    color: black; }
 
 .sectionGuide {
   width: 100%;
@@ -715,7 +597,7 @@ img {
     .sectionGuide .container .pageLocation {
       align-self: flex-start; }
     .sectionGuide .container h1 {
-      margin-top: 4rem; }
+      margin-top: 1rem; }
   .sectionGuide__allBoxes {
     width: 100%;
     display: flex;
@@ -946,7 +828,7 @@ img {
             font-weight: 400;
             font-size: 1.2rem;
             width: 150%;
-            min-width: 21rem;
+            min-width: 22rem;
             z-index: 1;
             border: 1px solid rgba(0, 0, 0, 0.15);
             overflow: hidden; }
@@ -966,7 +848,7 @@ img {
                 justify-content: flex-start;
                 align-items: center;
                 font-weight: 700;
-                padding: 0.7rem 1rem 0.7rem 1.5rem;
+                padding: 0.7rem 0 0.7rem 1rem;
                 z-index: 22; }
               .header__top__all__middle li ul li:not(:last-child) {
                 border-bottom: 1px solid rgba(0, 0, 0, 0.15); }
@@ -2608,7 +2490,7 @@ img {
 .reviewSmallBox {
   border: 1px solid #E8E8E8;
   width: 25%;
-  min-height: 28rem;
+  min-height: 26rem;
   color: black;
   padding: 1rem;
   display: flex;
@@ -2756,7 +2638,8 @@ img {
         .simpleBox .guruBox__leftLogoText__logo {
           width: auto; } }
       .simpleBox .guruBox__leftLogoText__logo > picture img {
-        height: 100%; }
+        height: 7rem;
+        width: 7rem; }
     .simpleBox .guruBox__leftLogoText .guruBox__leftLogoText__text {
       width: 70%; }
       .simpleBox .guruBox__leftLogoText .guruBox__leftLogoText__text img {
