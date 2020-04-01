@@ -472,7 +472,7 @@ img {
     line-height: 1.4; }
 
 .detailMain {
-  padding: 3rem 0; }
+  padding: 3rem 0 0; }
   @media (max-width: 970px) {
     .detailMain {
       margin-top: 0;
@@ -568,12 +568,14 @@ img {
     height: auto; }
 
 .sectionProducts {
-  padding: 8rem 0 5rem;
+  padding: 5rem 0;
   background: #F4F4F4;
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center; }
+  .sectionProducts h1 {
+    margin-bottom: 3rem; }
   .sectionProducts .topBoxes {
     margin-top: 0;
     background-color: transparent; }
@@ -1086,11 +1088,11 @@ img {
           background-color: #FFFFFF;
           position: absolute;
           top: 80%;
-          left: 10%;
+          left: 5%;
           color: rgba(255, 255, 255, 0.95);
           font-weight: lighter;
           font-size: 1.2rem;
-          width: 80%;
+          width: 90%;
           border-radius: 4px;
           border-top-right-radius: 0;
           box-shadow: 0 7px 11px rgba(0, 0, 0, 0.16); }
