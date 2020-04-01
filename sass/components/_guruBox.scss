@@ -86,7 +86,6 @@
 
     img{
       height: 7.5rem;
-      border-radius: 8px;
       box-shadow: 0 8px 10px rgba(black, 0.11);
     }
 
@@ -121,14 +120,12 @@
         }
 
         &__reviewName{
-          display: block;
           font-weight: 500;
-          opacity: .6;
           text-transform: uppercase;
           line-height: 1.5;
           font-size: 1.2rem;
-          color: #007bff;
-          text-decoration: none;
+          color: #383838;
+          text-decoration: underline solid #383838;
         }
 
       }
@@ -227,13 +224,14 @@
       align-items: center;
       width: 100%;
       height: auto;
+      margin-bottom: 0.5rem;
 
 
       .itemCircle{
         width: 5px;
         height: 5px;
         border-radius: 50%;
-        background-color: #F06059;
+        background-color: $color-primary;
       }
 
       h3{
@@ -244,7 +242,6 @@
         text-align: left;
 
       }
-      margin-bottom: 1.5rem;
 
     }
 
@@ -270,7 +267,11 @@
     }
 
 
-    button{
+    a{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 0 auto;
       background: linear-gradient(48deg,$color-primary 0%,$color-primary-dark 100%)!important;
       height: 7.3rem;
       width: 100%;

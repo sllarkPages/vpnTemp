@@ -431,6 +431,14 @@ main {
           .sectionSignup__inputBox form .subscribeButton {
             width: 30%; } }
 
+.simpleBoxTemplates {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column wrap;
+  margin: 3rem 0 4rem; }
+
 img {
   width: auto; }
 
@@ -2063,7 +2071,6 @@ img {
         width: 87%; } }
     .guruBox__leftLogoText img {
       height: 7.5rem;
-      border-radius: 8px;
       box-shadow: 0 8px 10px rgba(0, 0, 0, 0.11); }
     .guruBox__leftLogoText__text {
       text-align: left;
@@ -2082,14 +2089,12 @@ img {
         height: 1.5rem;
         box-shadow: none; }
       .guruBox__leftLogoText__text__review__reviewName {
-        display: block;
         font-weight: 500;
-        opacity: .6;
         text-transform: uppercase;
         line-height: 1.5;
         font-size: 1.2rem;
-        color: #007bff;
-        text-decoration: none; }
+        color: #383838;
+        text-decoration: underline solid #383838; }
   .guruBox__name {
     color: #1A1A1A;
     opacity: 0.65;
@@ -2152,12 +2157,12 @@ img {
       align-items: center;
       width: 100%;
       height: auto;
-      margin-bottom: 1.5rem; }
+      margin-bottom: 0.5rem; }
       .guruBox ul li .itemCircle {
         width: 5px;
         height: 5px;
         border-radius: 50%;
-        background-color: #F06059; }
+        background-color: #12dc91; }
       .guruBox ul li h3 {
         line-height: 1.4;
         font-size: 1.5rem;
@@ -2175,7 +2180,11 @@ img {
       .guruBox__btn {
         width: 100%;
         margin: 1rem 0; } }
-    .guruBox__btn button {
+    .guruBox__btn a {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 0 auto;
       background: linear-gradient(48deg, #12dc91 0%, #00b472 100%) !important;
       height: 7.3rem;
       width: 100%;
@@ -2186,20 +2195,20 @@ img {
       font-size: 1.8rem;
       font-weight: bolder; }
       @media (max-width: 1100px) {
-        .guruBox__btn button {
+        .guruBox__btn a {
           min-width: 25.8rem;
           max-width: 40%; } }
       @media (max-width: 500px) {
-        .guruBox__btn button {
+        .guruBox__btn a {
           min-width: 25.8rem;
           max-width: 82%;
           height: 6rem; } }
       @media (max-width: 420px) {
-        .guruBox__btn button {
+        .guruBox__btn a {
           min-width: 25.8rem;
           max-width: 82%;
           height: 5.5rem; } }
-      .guruBox__btn button:hover {
+      .guruBox__btn a:hover {
         background-color: #12dc91; }
     .guruBox__btn div {
       display: flex;
@@ -2707,3 +2716,94 @@ img {
     color: #131313; }
   .btn--primary:active {
     transform: translateY(0.3rem); }
+
+.simpleBox {
+  border-radius: 0 !important;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  height: 9rem;
+  padding: 1rem 2rem;
+  margin: 0; }
+  @media (max-width: 1100px) {
+    .simpleBox {
+      height: 15rem; } }
+  @media (max-width: 800px) {
+    .simpleBox {
+      height: auto; } }
+  .simpleBox:not(:first-of-type) {
+    border-top: none; }
+  .simpleBox:nth-of-type(odd) {
+    background-color: #fafaf8; }
+  .simpleBox .guruBox__leftLogoText {
+    width: 20%; }
+    @media (max-width: 1100px) {
+      .simpleBox .guruBox__leftLogoText {
+        height: 50%;
+        max-height: 8rem; } }
+    @media (max-width: 800px) {
+      .simpleBox .guruBox__leftLogoText {
+        width: 40%; } }
+    @media (max-width: 500px) {
+      .simpleBox .guruBox__leftLogoText {
+        width: 90%; } }
+    .simpleBox .guruBox__leftLogoText__logo {
+      width: 30%; }
+      @media (max-width: 500px) {
+        .simpleBox .guruBox__leftLogoText__logo {
+          width: auto; } }
+      .simpleBox .guruBox__leftLogoText__logo > picture img {
+        height: 100%; }
+    .simpleBox .guruBox__leftLogoText .guruBox__leftLogoText__text {
+      width: 70%; }
+      .simpleBox .guruBox__leftLogoText .guruBox__leftLogoText__text img {
+        width: 2rem;
+        height: 2rem; }
+  .simpleBox .guruBox__name {
+    width: 25%; }
+    @media (max-width: 1100px) {
+      .simpleBox .guruBox__name {
+        height: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center; } }
+    @media (max-width: 800px) {
+      .simpleBox .guruBox__name {
+        width: 40%; } }
+    @media (max-width: 500px) {
+      .simpleBox .guruBox__name {
+        width: 90%;
+        justify-content: flex-start; } }
+    .simpleBox .guruBox__name h3 {
+      font-size: 1.8rem; }
+  .simpleBox .listCircle {
+    width: 35%;
+    padding-left: 1.5rem; }
+    @media (max-width: 1100px) {
+      .simpleBox .listCircle {
+        height: 50%; } }
+    @media (max-width: 800px) {
+      .simpleBox .listCircle {
+        margin: 0;
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        align-items: center; } }
+    @media (max-width: 800px) {
+      .simpleBox .listCircle {
+        width: 97%;
+        margin: 1rem 0; } }
+    .simpleBox .listCircle .itemCircle {
+      background-color: #0f1215; }
+  .simpleBox .guruBox__btn {
+    width: 20%; }
+    @media (max-width: 1100px) {
+      .simpleBox .guruBox__btn {
+        margin: 1rem 0;
+        width: 80%; } }
+    @media (max-width: 500px) {
+      .simpleBox .guruBox__btn {
+        width: 100%; } }
+    .simpleBox .guruBox__btn a {
+      height: 5rem; }
+  @media (max-width: 800px) {
+    .simpleBox span:nth-of-type(2) {
+      display: none; } }

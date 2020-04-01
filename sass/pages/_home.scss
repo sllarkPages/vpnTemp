@@ -465,6 +465,14 @@ main{
 }
 
 
+.simpleBoxTemplates{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column wrap;
+  margin: 3rem 0 4rem;
+}
 
 img{
   width: auto;
