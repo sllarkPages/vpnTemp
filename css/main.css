@@ -121,10 +121,10 @@ main {
   z-index: 44; }
   @media (max-width: 800px) {
     main {
-      padding: 5rem 0; } }
+      padding: 5rem 0 0; } }
   @media (max-width: 500px) {
     main {
-      padding: 4rem 0; } }
+      padding: 4rem 0 0; } }
 
 .sectionWunder {
   color: black;
