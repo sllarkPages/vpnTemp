@@ -108,6 +108,15 @@ button {
 button:active {
   transform: translateY(3px); }
 
+.p-normal {
+  font-size: 16px;
+  color: rgba(0, 0, 0, 0.63);
+  line-height: 1.6;
+  text-align: left;
+  width: 100%;
+  max-width: unset !important;
+  margin-top: 0 !important; }
+
 main {
   padding: 5.5rem 0 0;
   width: 100%;
@@ -548,10 +557,21 @@ img {
       font-size: 16px;
       color: rgba(0, 0, 0, 0.63);
       line-height: 1.6; }
+      .sectionVPNReview__text p br {
+        content: "";
+        margin: 2em;
+        display: block;
+        margin-bottom: -20px; }
       .sectionVPNReview__text p:first-of-type {
         margin-bottom: 4rem; }
       .sectionVPNReview__text p:not(:first-of-type) {
         margin-bottom: 2rem; }
+      .sectionVPNReview__text p a {
+        text-decoration: underline;
+        color: #12dc91; }
+    .sectionVPNReview__text .p-small {
+      font-style: italic;
+      font-size: small; }
     .sectionVPNReview__text ul {
       list-style-type: square;
       padding-left: 20px; }
