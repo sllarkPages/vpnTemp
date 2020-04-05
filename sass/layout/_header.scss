@@ -250,12 +250,20 @@
                 color: #818181;
                 width: 100%;
                 height: 100%;
-                display: flex;
-                justify-content: flex-start;
-                align-items: center;
+                display: block;
                 font-weight: 700;
-                padding: 0.7rem 0 0.7rem 1rem;
+                padding: 1.5rem 0 0 1rem;
                 z-index: 22;
+
+
+                &:first-letter{
+                  text-transform: uppercase;
+                }
+              }
+
+              &:first-letter{
+                color: red;
+                text-transform: capitalize;
               }
 
               &:not(:last-child){
@@ -290,6 +298,9 @@
             overflow: hidden;
             display: none;
           }
+
+
+
         }
 
         .active{
@@ -724,8 +735,12 @@
   top: 0;
   z-index: 999;
   transition: all 0.25s ease;
+}
 
 
+#smallHeader .thirdLiOptions{
+  overflow-y: auto;
+  max-height: 90vh;
 }
 
 .hide{
