@@ -1182,7 +1182,7 @@ img {
   z-index: 999;
   transition: all 0.25s ease; }
 
-#smallHeader .thirdLiOptions {
+#smallHeader .headerThirdLi .thirdLiOptions {
   overflow-y: auto;
   max-height: 90vh; }
 
@@ -1282,6 +1282,8 @@ img {
       .footer__bottom {
         flex-flow: column;
         padding: 4rem 2rem; } }
+    .footer__bottom a:hover {
+      text-decoration: underline; }
     .footer__bottom__infoLinks {
       display: flex;
       width: auto; }

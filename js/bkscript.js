@@ -28,7 +28,7 @@ window.onload = function (e) {
         }
 };
 
-var liMenuClasses = ['headerFirstLi', 'headerSecLi','headerThirdLi','sectionWunder__dropdownButton__cont', 'sectionReviewsDropdownButton'];
+var liMenuClasses = ['headerFirstLi', 'headerSecLi','headerThirdLi','sectionWunder__dropdownButton__cont', 'sectionReviewsDropdownButton','langDropdown'];
 
 
 var headerBtnLiClasses = ['headerFirstSidebBtn', 'headerSecondSidebBtn', 'headerThirdSidebBtn'];
@@ -47,9 +47,12 @@ function manageMenu(ele) {
             element.isClicked = false;
 
             element.onclick = function (e) {
+
                 if(e.target === element.children[0] ||
-                    (e.target=== element.children[1].children[0] && ele === 'thirdLiOptions'))
+                    (e.target === element.children[1].children[0] &&  ele === 'langDropdown')){
+                    console.log('here');
                     e.preventDefault();
+                }
 
                 if (!element.isClicked && !element.children[2].classList.contains('hide')) {
                     element.children[2].classList.remove('hide');
